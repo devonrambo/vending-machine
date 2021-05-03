@@ -1,0 +1,25 @@
+Great job, only a few minor issues:
+
+Usage:
+
+1. When you display the list when displaying products, it would be nice
+to see how many are in stock and what is being sold. Ideally, the same
+information as they would see from option #1 from the 1st level.
+
+Code:
+
+1. In CashReader, make sure you do something within the catch - 
+
+---------------------------------------------------
+        try {
+            File outputFile = new File("log.txt");
+	.....
+
+        } catch (Exception e) {
+
+        }
+---------------------------------------------------
+
+A simple sysout would do. The reason we are catching things is to notify
+someone that some unusual thing happened, in this case it would be that
+the machine couldn't open log.txt.
